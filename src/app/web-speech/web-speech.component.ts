@@ -130,6 +130,7 @@ export class WebSpeechComponent implements OnInit {
   }
 
   createApplication(){
+	var cmd: any = {};
 	cmd = {"cmd":"create"};
 	this.cmdExecutorService.appendCmd(cmd).subscribe((res) => {
 		console.log("res::",res);
