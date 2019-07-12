@@ -128,4 +128,11 @@ export class WebSpeechComponent implements OnInit {
   detectChanges() {
     this.changeDetector.detectChanges();
   }
+
+  createApplication(){
+	cmd = {"cmd":"create"};
+	this.cmdExecutorService.appendCmd(cmd).subscribe((res) => {
+		console.log("res::",res);
+	});
+  }
 }
