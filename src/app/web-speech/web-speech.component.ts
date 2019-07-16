@@ -27,7 +27,7 @@ export class WebSpeechComponent implements OnInit {
   ngOnInit() {
     this.currentLanguage = this.languages[0];
 	this.speechRecognizer.initialize(this.currentLanguage);
-	this.speechRecognizer.start(new Date());
+	//this.speechRecognizer.start(new Date());
     this.initRecognition();
     this.notification = null;
   }
@@ -69,7 +69,7 @@ export class WebSpeechComponent implements OnInit {
 							  {"key":"login", "value":"add button with label login"},
 							  {"key":"reset", "value":"add button with label reset"},
 							  {"key":"email", "value":"change label of first input field to email"},
-							  {"key":"middle", "value":"justify content to middle"},
+							  {"key":"middle", "value":"move content to middle"},
 							  {"key":"revert", "value":"revert previous change"},
 							  {"key":"one", "value":"change theme one"},
 							  {"key":"1", "value":"change theme one"},

@@ -1,27 +1,15 @@
-<div class="center" ibmRow style="justify-content: space-evenly;">
-	<div><!--
-		Copyright IBM Corp. 2016, 2018
 
-		This source code is licensed under the Apache-2.0 license found in the
-		LICENSE file in the root directory of this source tree.
-	  -->
-	  <button class="bx--btn bx--btn--primary bx--btn--sm" (click)="createApplication()" type="button" style="margin:10px 10px 10px 0px">
-		Create new application
-	  </button>
-
-	  </div>
-</div>
 <div class="center">
   <button mat-fab (click)="startButton($event)">
-		<mat-icon >mic</mat-icon>
-    <!-- <mat-icon *ngIf="!recognizing">mic</mat-icon>
-    <mat-icon *ngIf="recognizing">stop</mat-icon> -->
+		<!-- <mat-icon >mic</mat-icon> -->
+    <mat-icon *ngIf="!recognizing">mic</mat-icon>
+    <mat-icon *ngIf="recognizing">stop</mat-icon>
   </button>
 </div>
 
 <form>
   <mat-form-field class="speech-result-width">
-    <textarea matInput [value]="finalTranscript" placeholder="Speech Input Result" rows="10" disabled="true"></textarea>
+    <textarea matInput [value]="finalTranscript" placeholder="Speech Input Result" rows="10" disabled="false"></textarea>
   </mat-form-field>
 </form>
 
